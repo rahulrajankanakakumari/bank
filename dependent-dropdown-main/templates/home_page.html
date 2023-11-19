@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+		*{
+			text-decoration: none;
+		}
+		.navbar{
+			background: black; font-family: calibri; padding-right: 15px;padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+		}
+		button{
+			background-color: white; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+		button a{
+			color: white; font-weight: bold; font-size: 15px;
+		}
+
+        img {
+  float: right;
+  border: 2px dotted black;
+  margin: 1px 0px 1px 20px;
+}
+	</style>
+<body>
+
+ <nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><a href="#">Online Banking</a> </div>
+
+            <ul>
+                <a class="nav-item nav-link" href="{% url 'personal:index' %}" id="nav-login">Logout</a>
+                <a href="add_person"><button>FORM</button></a>
+            </ul>
+
+        </div>
+    </nav>
+
+ <h3>welcome to application form</h3>
+
+<h4>How to Register for Net Banking Online</h4>
+
+<p>Besides offline registration, which involves the submission of the application form at the bank, users can register for net-banking online from the respective bank’s official website. However, it should be noted that not all banks offer online registration for internet banking services.</p>
+
+<p>Step 1: Visit your bank’s official net-banking website</p>
+
+<p>Step 2: Click on the ‘login’ button under personal/retail banking option</p>
+
+<p>Step 3: On the next screen, click on the ‘New User? Register Here’ option</p>
+
+<p>Step 4: If you have already obtained the customer ID and password from the bank, enter and proceed to login. Otherwise, click ‘Next’</p>
+
+<p>Step 5: Now, you will be required to fill a ‘Self Registration Form’. Enter details such as account number, registered mobile number, email address, branch code, CIF number, debit card details, etc. After that, click on ‘Submit’</p>
+
+<p>Step 6: Authenticate your registration using a one-time password sent to your registered mobile number</p>
+
+<p>Step 7: On the next screen, your temporary customer ID and password will be displayed</p>
+
+<p>Step 8: Log-in using your temporary credentials. You need to create a new log-in password after logging in for the first time</p>
+
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block stylecontent %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+
+		*{
+			text-decoration: none;
+		}
+		.navbar{
+			background: black; font-family: calibri; padding-right: 15px;padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+		}
+		button{
+			background-color: white; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+		button a{
+			color: white; font-weight: bold; font-size: 15px;
+		}
+
+        img {
+  float: right;
+  border: 2px dotted black;
+  margin: 1px 0px 1px 20px;
+}
+
+	</style>
+{% endblock %}
+
+{% block bodycontent%}
+<body>
+ <nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><a href="#">Application Form</a> </div>
+
+
+
+        </div>
+    </nav>
+<br>
+
+<div>
+    <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="birthday">Birthday:</label><br>
+  <input type="date" id="birthday" name="birthday"><br>
+  <label for="fname">Age:</label><br>
+  <input type="number" id="age" name="age"><br>
+   <label for="fname">Gender</label><br>
+  <input type="radio" name="gender" value="male"> Male
+   <input type="radio" name="gender" value="female"> Female<br>
+   <label for="phone">phone number:</label><br>
+   <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+   <label for="email">Enter your email:</label><br>
+   <input type="email" id="email" name="email"><br>
+   <p><label for="w3review">ADDRESS:</label></p>
+   <textarea id="w3review" name="w3review" rows="4" cols="50">
+   At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+   </textarea><br>
+
+<form method="post" action="">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+
+
+
+
+
+<!--  <div class="form-group col-md-4"><br>-->
+<!--       <label for="inputDistrict">District</label><br>-->
+<!--    <select class="form-control" id="District">-->
+
+
+<!--    <option value="">&#45;&#45; District &#45;&#45; </option>-->
+<!--                        <option value="Thiruvananthapuram">Thiruvananthapuram</option>-->
+<!--                        <option value="Ernakulam">Ernakulam</option>-->
+<!--                        <option value="Kollam">Kollam</option>-->
+<!--                        <option value="Palakkad">Palakkad</option>-->
+<!--                        <option value="Alappuzha">Alappuzha</option>-->
+
+
+
+<!--    </select>-->
+
+<!--  </div>-->
+<!--  <div class="form-group col-md-4"><br>-->
+<!--    <label for="inputDistrict">Branch</label><br>-->
+<!--    <select class="form-control" id="Branch">-->
+
+<!--        <option value="">&#45;&#45; Branch &#45;&#45; </option>-->
+<!--                        <option value="Thiruvananthapuram">kattakada</option>-->
+<!--                        <option value="Ernakulam">Muvattupuzha</option>-->
+<!--                        <option value="Kollam">Chirakkara</option>-->
+<!--                        <option value="Palakkad">Mannarkad</option>-->
+<!--                        <option value="Alappuzha">Alappuzha</option>-->
+<!--    </select>-->
+<!--  </div><br>-->
+
+   <label for="cars">Account Type</label><br>
+  <select id="cars" name="cars"><br>
+      <option value="">-- Account Type -- </option><br>
+      <option value="savings account">savings account</option>
+    <option value="volvo">current account</option>
+
+  </select><br>
+
+<br>
+
+  <label for="cars">Materials provide</label><br>
+        <input type="radio"
+               name="agree"
+               value="Debit card">Debit card
+        <input type="radio"
+               name="agree"
+               value="Credit card">Credit card
+        <input type="radio"
+               name="agree"
+               value="Checkbook">Checkbook <br>
+
+
+
+<button type="submit">Submit</button>
+</form>
+ </form>
+
+</div>
+
+
+
+
+
+</body>
+</html>
+{% endblock %}

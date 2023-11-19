@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style type="text/css">
+
+
+		*{
+			text-decoration: none;
+		}
+		.navbar{
+			background: black; font-family: calibri; padding-right: 15px;padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+		}
+		button{
+			background-color: white; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+		button a{
+			color: white; font-weight: bold; font-size: 15px;
+		}
+
+        img {
+  float: right;
+  border: 2px dotted black;
+  margin: 1px 0px 1px 20px;
+}
+	</style>
+
+<body>
+
+<nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><a href="#">Application Accepted</a> </div>
+
+            <ul>
+                <a class="nav-item nav-link" href="{% url 'personal:index' %}" id="nav-create">Logout</a>
+            </ul>
+
+        </div>
+</nav>
+
+        <h1>Types of Fund Transfers available on Net Banking</h1>
+
+        <p>Net-banking allows the transfer of funds from one account to another through three different ways- NEFT, RTGS and IMPS. Let us understand these three methods in details-</p>
+
+        <h3>NEFT</h3>
+        <p>National Electronic Fund Transfer (NEFT) is one of the most commonly used payment methods which enables one-to-one fund transfer. It is a time-restricted process at the bank, but available 24×7 on the net-banking portals. Generally, it takes about 30 minutes for the funds to be successfully transferred via NEFT. However, the time can even stretch to 2-3 hours.</p>
+
+        <h3>RTGS</h3>
+        <p>Real-Time Gross Settlement (RTGS) refers to a continuous settlement of funds individually on an order-by-order basis. This implies that the RTGS system ensures that the beneficiary’s account is credited with the funds immediately. Transactions via RTGS are monitored by the RBI which suggests that successful transfers are irrevocable. This method is used to transfer a minimum of Rs.2 lakh. Just like NEFT, RTGS is also a time-restricted service at the bank, but accessible 24×7 via net-banking.</p>
+
+        <h3>IMPS</h3>
+        <p>Immediate Payment System (IMPS) also deals in the real-time transfer of funds. It is most commonly used to transfer funds instantly within banks across India via mobile, internet and ATM. One can transfer funds via IMPS just with the mobile number of the beneficiary.</p>
+
+
+        <h1>Popular Types of e-banking Services in India</h1>
+
+        <p>Internet Banking:It is the type of electronic banking service which enables customers to perform several financial and non-financial transactions via the internet. With internet or online banking or net-banking, customers can transfer funds to another bank account, check account balance, view bank statements, pay utility bills, and much more</p>
+        <p>Mobile Banking: This electronic banking system enables customers to perform financial and non-financial transactions via mobile phone. Most of the banks have launched their mobile banking applications available on Google Playstore and Apple App Store. Just like the net-banking portal, customers can use the mobile application to access banking services.</p>
+        <p>ATM: Automated Teller Machines (ATM) is one of the most popular types of e-banking. ATMs allow customers to withdraw funds, deposit money, change Debit Card PIN, and other banking services. To make use of an ATM, the user must have a password. Banks charge a nominal fee from the customers on every transaction made after crossing the specified limit of free transactions if the transaction is done from any other bank’s ATM.</p>
+        <p>Debit Cards: Almost every person owns a debit card. This card is connected to your bank account and you can go cashless with this card. You can use your debit card for all types of transactions, the transaction amount is debited from your account instantly</p>
+        <p>Deposit and Withdraws (Direct): This service under e-banking offers the customer a facility to approve paychecks regularly to the account. The customer can give the bank an authority to deduct funds from his/her account to pay bills, instalments of any kind, insurance payments, and many more</p>
+        <p>Pay by Phone Systems:This service allows the customer to contact his/her bank to request them for any bill payment or to transfer funds to some other account</p>
+        <p>Point-of-Sale Transfer Terminals:This service allows customers to pay for the purchase through a debit/credit card instantly</p>
+
+    <h1></h1>
+</body>
+</html>

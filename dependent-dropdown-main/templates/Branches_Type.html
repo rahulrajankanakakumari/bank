@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+
+
+		*{
+			text-decoration: none;
+		}
+		.navbar{
+			background: black; font-family: calibri; padding-right: 15px;padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+		}
+		button{
+			background-color: white; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+		button a{
+			color: white; font-weight: bold; font-size: 15px;
+		}
+
+        img {
+  float: right;
+  border: 2px dotted white;
+  margin: 1px 0px 1px 20px;
+}
+	</style>
+
+<body>
+
+     <nav class="navbar">
+		<div class="navdiv">
+
+
+			<div class="logo"><a href="#">Branches</a> </div>
+
+<div> <a class="nav-item nav-link" href="{% url 'personal:index' %}" id="nav-create">Home Page</a></div>
+            <ul>
+
+
+                <a href="#">Choose a branches:</a>
+                     <select name="link" id="" size="1" onchange="window.location.href=this.value;">
+                         <option >-- Select Branches --</option>
+                            <option  value="https://en.wikipedia.org/wiki/Kattakada">kattakada</option>
+                             <option value="https://en.wikipedia.org/wiki/Indian_Bank">Muvattupuzha</option>
+                                <option value="https://en.wikipedia.org/wiki/Kerala_Bank">Chirakkara</option>
+                            <option value="https://en.wikipedia.org/wiki/Cooperative_banking">Mannarkad</option>
+                            <option value="https://en.wikipedia.org/wiki/Federal_Bank">Alappuzha</option>
+                     </select>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+</body>
+</html>
